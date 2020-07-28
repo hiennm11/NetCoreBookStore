@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBookStore", "NetCoreBookStore\NetCoreBookStore.csproj", "{4D9F8489-28CF-4027-A55F-D11D0302E4BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore", "NetCoreBookStore\NetCoreBookStore.csproj", "{4D9F8489-28CF-4027-A55F-D11D0302E4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBookStore.Core", "NetCoreBookStore.Core\NetCoreBookStore.Core.csproj", "{D971B81F-417B-4D72-B102-2F1B894CF831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreBookStore.Data", "NetCoreBookStore.Data\NetCoreBookStore.Data.csproj", "{F803817A-7DEA-477E-8CBF-5A74042AB53C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4D9F8489-28CF-4027-A55F-D11D0302E4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D9F8489-28CF-4027-A55F-D11D0302E4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D9F8489-28CF-4027-A55F-D11D0302E4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D971B81F-417B-4D72-B102-2F1B894CF831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D971B81F-417B-4D72-B102-2F1B894CF831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D971B81F-417B-4D72-B102-2F1B894CF831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D971B81F-417B-4D72-B102-2F1B894CF831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F803817A-7DEA-477E-8CBF-5A74042AB53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F803817A-7DEA-477E-8CBF-5A74042AB53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F803817A-7DEA-477E-8CBF-5A74042AB53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F803817A-7DEA-477E-8CBF-5A74042AB53C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
