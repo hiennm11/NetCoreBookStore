@@ -11,7 +11,9 @@ namespace NetCoreBookStore.Core.Repositories
 {
     public interface IBookRepository
     {
-        Task<IEnumerable<BookVM>> GetAllBook();
+        Task<IEnumerable<BookVM>> GetAllBookAsync();
+        Task<IEnumerable<BookVM>> GetBookPagingAsync(int page, int pageSize);
+
     }
 
     public class BookRepository : IBookRepository
@@ -23,7 +25,7 @@ namespace NetCoreBookStore.Core.Repositories
             this._dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<BookVM>> GetAllBook()
+        public async Task<IEnumerable<BookVM>> GetAllBookAsync()
         {
             return await _dbContext.Books.Select(x => new BookVM
             {
@@ -33,6 +35,18 @@ namespace NetCoreBookStore.Core.Repositories
                 NameAlias = x.NameAlias,
                 Price = x.Price
             }).ToListAsync();
+        }
+
+        public async Task<IEnumerable<BookVM>> GetBookPagingAsync(int page, int pageSize)
+        {
+            return await _dbContext.Books.Select(x => new BookVM
+            {
+                Id = x.Id,
+                Description = x.Description,
+                Title = x.Title,
+                NameAlias = x.NameAlias,
+                Price = x.Price
+            }).Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
         }
     }
 }
