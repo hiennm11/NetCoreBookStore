@@ -14,6 +14,7 @@ namespace NetCoreBookStore.Data.Entities
         public int ShipperId { get; set; }
         public State State { get; set; }
 
+        public AppUser User { get; set; }
         public Shipper Shipper { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
         public Discount Discount { get; set; }

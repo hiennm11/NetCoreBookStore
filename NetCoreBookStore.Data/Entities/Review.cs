@@ -13,6 +13,7 @@ namespace NetCoreBookStore.Data.Entities
         public int Rating { get; set; }
         public DateTime Date { get; set; }
 
+        public AppUser User { get; set; }
         public Book Book { get; set; }
     }
 }

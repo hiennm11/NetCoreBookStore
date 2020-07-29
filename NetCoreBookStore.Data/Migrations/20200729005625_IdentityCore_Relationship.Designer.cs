@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetCoreBookStore.Data.EF;
 
 namespace NetCoreBookStore.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200729005625_IdentityCore_Relationship")]
+    partial class IdentityCore_Relationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,13 +94,6 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("AppUserRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("70562d6e-61e8-4124-a6e7-eefa69b64c80"),
-                            RoleId = new Guid("70562d6e-61e8-4124-a6e7-eefa69b64c80")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
@@ -144,16 +139,6 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("70562d6e-61e8-4124-a6e7-eefa69b64c80"),
-                            ConcurrencyStamp = "6a9a7a39-888b-4d69-9fe1-97ad6a22997c",
-                            Description = "Admin role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("NetCoreBookStore.Data.Entities.AppUser", b =>
@@ -222,28 +207,6 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("70562d6e-61e8-4124-a6e7-eefa69b64c80"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "d1137a8d-3f8d-4d32-8506-48becb9e0624",
-                            Dob = new DateTime(2020, 7, 29, 8, 5, 45, 954, DateTimeKind.Local).AddTicks(3561),
-                            Email = "app-admin@abc.xyz",
-                            EmailConfirmed = true,
-                            FirstName = "Admin",
-                            LastName = "Admin",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "app-admin@abc.xyz",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDoHcnK98lz/DV5K7KRnLzZr39FQfaEoebwOqJtGtQcQRhCRCUmTruTxvxDptubQpQ==",
-                            PhoneNumber = "0985123745",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("NetCoreBookStore.Data.Entities.Author", b =>
@@ -329,14 +292,14 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0e66c814-4970-45ff-9c78-b2b1fd9fa62e"),
+                            Id = new Guid("5ef2e180-48b6-477d-95cf-705b1ffd30eb"),
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 7, 29, 8, 5, 45, 941, DateTimeKind.Local).AddTicks(6848),
+                            CreatedDate = new DateTime(2020, 7, 29, 7, 56, 24, 771, DateTimeKind.Local).AddTicks(5186),
                             Description = "Seeded book",
                             Edition = 2020,
                             NameAlias = "book-01",
                             Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 7, 29, 8, 5, 45, 942, DateTimeKind.Local).AddTicks(5486),
+                            PublicationDate = new DateTime(2020, 7, 29, 7, 56, 24, 772, DateTimeKind.Local).AddTicks(7385),
                             Status = 1,
                             Title = "Book 01"
                         });

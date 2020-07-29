@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using NetCoreBookStore.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,40 @@ namespace NetCoreBookStore.Data.Extensions
                     Status = Enums.Status.Active,                  
                 }
             );
+
+            Guid ADMIN_ID = Guid.NewGuid();
+            // any guid, but nothing is against to use the same one
+            Guid ROLE_ID = ADMIN_ID;
+            modelBuilder.Entity<AppRole>().HasData(new AppRole
+            {
+                Id = ROLE_ID,
+                Name = "admin",
+                NormalizedName = "admin",
+                Description = "Admin role"
+            });
+
+            var hasher = new PasswordHasher<AppUser>();
+            modelBuilder.Entity<AppUser>().HasData(new AppUser
+            {
+                Id = ADMIN_ID,
+                UserName = "admin",
+                NormalizedUserName = "admin",
+                Email = "app-admin@abc.xyz",
+                NormalizedEmail = "app-admin@abc.xyz",
+                EmailConfirmed = true,
+                PasswordHash = hasher.HashPassword(null, "Admin@123"),
+                SecurityStamp = string.Empty,
+                FirstName = "Admin",
+                LastName = "Admin",
+                Dob = DateTime.Now,
+                PhoneNumber = "0985123745",
+            });
+
+            modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(new IdentityUserRole<Guid>
+            {
+                RoleId = ROLE_ID,
+                UserId = ADMIN_ID
+            });
         }
     }
 }
