@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Data.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -18,6 +19,9 @@ namespace NetCoreBookStore.Data.EF
         {
             //Register entity configuration which implement IEntityTypeConfiguration
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            //Seed data
+            modelBuilder.Seed();
         }
 
         public DbSet<Book> Books { get; set; }

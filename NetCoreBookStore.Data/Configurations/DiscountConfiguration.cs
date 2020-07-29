@@ -16,7 +16,7 @@ namespace NetCoreBookStore.Data.Configurations
             builder.Property(x => x.Value).IsRequired();
 
             builder.HasMany(x => x.Books).WithOne(s => s.Discount).OnDelete(DeleteBehavior.SetNull);
-            builder.HasMany(x => x.Orders).WithOne(s => s.Discount).OnDelete(DeleteBehavior.SetNull);
+            builder.HasMany(x => x.Orders).WithOne(s => s.Discount);
         }
     }
 }

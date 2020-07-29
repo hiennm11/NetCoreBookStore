@@ -13,7 +13,7 @@ namespace NetCoreBookStore.Data.Configurations
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Title).IsRequired();
-            builder.Property(x => x.Price).IsRequired();
+            builder.Property(x => x.Price).IsRequired().HasDefaultValue(0);
             builder.Property(x => x.PublicationDate).IsRequired();
             builder.Property(x => x.Description).IsRequired();
 
