@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BookVM>
+
+<div class="breadcrumb">
+    <div class="container">
+        <a class="breadcrumb-item" href="index.html">Home</a>
+        <span class="breadcrumb-item active">Shop</span>
+    </div>
+</div>
+
+<section class="static about-sec">
+    <partial name="_RecommendedBooks" />
+    <partial name="_RecentBooks" />
+    @foreach (var item in Model)
+    {
+        <partial name="_BookItem" model="@item" />
+    }
+</section>

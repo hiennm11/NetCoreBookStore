@@ -4,7 +4,7 @@ namespace NetCoreBookStore.Data.Entities
 {
     public class Discount
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
         public int Value { get; set; }

@@ -16,7 +16,6 @@ namespace NetCoreBookStore.Data.Configurations
             builder.Property(x => x.Price).IsRequired().HasDefaultValue(0);
             builder.Property(x => x.PublicationDate).IsRequired();
             builder.Property(x => x.Description).IsRequired();
-
         }
     }
 }

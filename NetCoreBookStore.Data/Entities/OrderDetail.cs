@@ -4,8 +4,8 @@ namespace NetCoreBookStore.Data.Entities
 {
     public class OrderDetail
     {
-        public int OrderId { get; set; }
-        public Guid BookId { get; set; }
+        public string OrderId { get; set; }
+        public string BookId { get; set; }
         public int Amount { get; set; }
 
         public Order Order { get; set; }

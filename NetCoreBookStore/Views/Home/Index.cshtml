@@ -1,12 +1,13 @@
-﻿
+﻿@model IEnumerable<BookVM>
 @{
     ViewData["Title"] = "Index";
+    var rec = (List<BookVM>)ViewBag.Recommended;
 }
 
 <partial name="_Carousel" />
-<partial name="_RecommendedBooks" />
+<partial name="_RecommendedBooks" model="@rec" />
 <partial name="_About" />
-<partial name="_RecentBooks" />
+<partial name="_RecentBooks" model="@Model" />
 
 <section class="features-sec">
     <div class="container">

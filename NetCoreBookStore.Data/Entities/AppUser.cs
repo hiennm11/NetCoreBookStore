@@ -11,7 +11,6 @@ namespace NetCoreBookStore.Data.Entities
         public string LastName { get; set; }
         public DateTime Dob { get; set; }
 
-        public ICollection<Review> Reviews { get; set; }
         public ICollection<Order> Orders { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace NetCoreBookStore.Data.Entities
 {
     public class Book
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime PublicationDate { get; set; }
@@ -18,9 +18,7 @@ namespace NetCoreBookStore.Data.Entities
         public Status Status { get; set; }
         public DateTime CreatedDate { get; set; }
 
-        public ICollection<BookGenre> BookGenres { get; set; }
-        public ICollection<BookAuthor> BookAuthors { get; set; }
-        public ICollection<Review> Reviews { get; set; }
+        public ICollection<BookImage> Images { get; set; }
         public Discount Discount { get; set; }
     }
 }

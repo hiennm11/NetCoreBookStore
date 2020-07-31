@@ -11,30 +11,51 @@ namespace NetCoreBookStore.Data.Extensions
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Author>().HasData(
-                new Author
+            modelBuilder.Entity<Discount>().HasData(
+                new Discount
                 {
-                    Id = 1, AuthorName = "Undefined", Description = "Default author of all new book", NameAlias = "undefined"
+                    Id = Guid.NewGuid().ToString(), Name = "Default", Value = 0
+                },
+                new Discount
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Test",
+                    Value = 10
                 }
             );
-            modelBuilder.Entity<Book>().HasData(
-                new Book
+
+            var bookList = new List<Book>();
+            for (int i = 1; i <= 90; i+=4)
+            {
+                var book = new Book
                 {
-                    Id = Guid.NewGuid(),
-                    Title = "Book 01",
-                    NameAlias = "book-01",
+                    Id = Guid.NewGuid().ToString(),
+                    Title = $"Book {i}",
+                    NameAlias = $"book-{i}",
                     Description = "Seeded book",
                     AvailableQuantity = 100,
                     CreatedDate = DateTime.Now,
                     PublicationDate = DateTime.Now,
                     Edition = 2020,
                     Price = 33000,
-                    Status = Enums.Status.Active,                  
-                }
-            );
+                    Status = Enums.Status.Active,
+                    Images = new List<BookImage>()
+                };
+
+                var listImg = new List<BookImage>() 
+                {
+                    new BookImage { BookId = book.Id, Id = Guid.NewGuid().ToString(), ImgPath = $"/MyStaticFiles/images/{book.NameAlias}.jpg", Sort = 1, Description = book.Title },
+                    new BookImage { BookId = book.Id, Id = Guid.NewGuid().ToString(), ImgPath = $"/MyStaticFiles/images/product2.jpg", Sort = 2, Description = book.Title },
+                    new BookImage { BookId = book.Id, Id = Guid.NewGuid().ToString(), ImgPath = $"/MyStaticFiles/images/product3.jpg", Sort = 3, Description = book.Title }
+                };
+
+                modelBuilder.Entity<BookImage>().HasData(listImg);
+                bookList.Add(book);
+            }
+
+            modelBuilder.Entity<Book>().HasData(bookList);
 
             Guid ADMIN_ID = Guid.NewGuid();
-            // any guid, but nothing is against to use the same one
             Guid ROLE_ID = ADMIN_ID;
             modelBuilder.Entity<AppRole>().HasData(new AppRole
             {
