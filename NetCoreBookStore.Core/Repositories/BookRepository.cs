@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NetCoreBookStore.Data.EF;
+using NetCoreBookStore.Data.Entities;
 using NetCoreBookStore.Data.ResponseModel;
 using NetCoreBookStore.Data.ViewModel;
 using System;
@@ -18,6 +19,9 @@ namespace NetCoreBookStore.Core.Repositories
         Task<IEnumerable<BookVM>> GetRecomendedBooksAsync();
         Task<IEnumerable<BookVM>> GetPagingAsync(int page, int pageSize);
         Task<BookDetailsResponse> GetSingleAsync(string Id);
+        Book GetBookEntityById(string Id);
+        Task<Book> GetBookEntityByIdAsync(string Id);
+
 
     }
 
@@ -54,6 +58,16 @@ namespace NetCoreBookStore.Core.Repositories
                 Price = x.Price,
                 Image = _dbContext.BookImages.FirstOrDefault(s => s.BookId == x.Id && s.Sort == 1).ImgPath,
             }).ToListAsync();
+        }
+
+        public Book GetBookEntityById(string Id)
+        {
+            return _dbContext.Books.Include(s => s.Images).FirstOrDefault(x => x.Id == Id);
+        }
+
+        public Task<Book> GetBookEntityByIdAsync(string Id)
+        {
+            return _dbContext.Books.Include(s => s.Images).FirstOrDefaultAsync(x => x.Id == Id);
         }
 
         public async Task<IEnumerable<BookVM>> GetPagingAsync(int page, int pageSize)

@@ -3,6 +3,6 @@
     <div class="item">
         <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id"><img src="@Model.Image" alt="img"></a>
         <h3><a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id">@Model.Title</a></h3>
-        <h6><span class="price">$49</span> / <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id">Buy Now</a></h6>
+        <h6><span class="price">$49</span> / <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-bookId="@Model.Id">Buy Now</a></h6>
         @*<span class="sale">Sale !</span>*@      
     </div>

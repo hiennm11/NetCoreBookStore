@@ -26,6 +26,56 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*Cart view*/
+.param {
+    margin-bottom: 7px;
+    line-height: 1.4;
+}
+
+.param-inline dt {
+    display: inline-block;
+}
+
+.param dt {
+    margin: 0;
+    margin-right: 7px;
+    font-weight: 600;
+}
+
+.param-inline dd {
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+.param dd {
+    margin: 0;
+    vertical-align: baseline;
+}
+
+.shopping-cart-wrap .price {
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: block;
+}
+
+var {
+    font-style: normal;
+}
+
+.media img {
+    margin-right: 1rem;
+}
+
+.img-sm {
+    width: 90px;
+    max-height: 75px;
+    object-fit: cover;
+}
+
+/*End Cart view css*/
+
 h1, h2, h3, h4, h5, h6, ul {
   margin: 0px;
   padding: 0px; }
@@ -507,7 +557,7 @@ header .cart {
     background: #cdcdcd;
     border-radius: 50%;
     margin: 0 5px;
-    trnsition: all 0.3s; }
+    transition: all 0.3s; }
     .testimonial-sec button.owl-dot.active {
       background: #ff9700;
       transform: scale(1.6); }
@@ -1143,6 +1193,9 @@ footer {
 
   footer .copy-right .share {
     text-align: left;
-    margin-top: 10px; } }
+    margin-top: 10px; } 
+
+}
 
 /*# sourceMappingURL=styles.css.map */
+

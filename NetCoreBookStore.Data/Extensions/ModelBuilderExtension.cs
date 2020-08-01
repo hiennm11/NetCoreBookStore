@@ -32,7 +32,6 @@ namespace NetCoreBookStore.Data.Extensions
                     Id = Guid.NewGuid().ToString(),
                     Title = $"Book {i}",
                     NameAlias = $"book-{i}",
-                    Description = "Seeded book",
                     AvailableQuantity = 100,
                     CreatedDate = DateTime.Now,
                     PublicationDate = DateTime.Now,
@@ -41,6 +40,10 @@ namespace NetCoreBookStore.Data.Extensions
                     Status = Enums.Status.Active,
                     Images = new List<BookImage>()
                 };
+
+                book.Description = $"<p>{book.Title} is simply dummy text of the printing and typesetting industry. {book.Title} has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. {book.Title} has been the book. </p>"
+                + $"<p>{book.Title}'s Description here  </p>";
+                    
 
                 var listImg = new List<BookImage>() 
                 {

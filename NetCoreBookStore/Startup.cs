@@ -32,8 +32,11 @@ namespace NetCoreBookStore
             services.AddDirectoryBrowser();
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddScoped<ShoppingCartRepository>(sp => ShoppingCartRepository.GetCart(sp));
+            
+            services.AddHttpContextAccessor();
+            services.AddSession();
 
         }
 
@@ -54,6 +57,8 @@ namespace NetCoreBookStore
                 FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"MyStaticFiles")),
                 RequestPath = new PathString("/MyStaticFiles")
             });
+
+            app.UseSession();
 
             app.UseRouting();
 

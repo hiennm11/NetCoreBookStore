@@ -5,7 +5,7 @@
 }
 <div class="breadcrumb">
     <div class="container">
-        <a class="breadcrumb-item" href="index.html">Home</a>
+        <a class="breadcrumb-item" asp-controller="Home" asp-action="Index">Home</a>
         <span class="breadcrumb-item">Product</span>
         <span class="breadcrumb-item active">@Model.Title</span>
     </div>
@@ -19,19 +19,19 @@
                 <div id="myCarousel" class="carousel slide">
                     <!-- main slider carousel items -->
                     <div class="carousel-inner">
-                        @foreach (var item in Model.Images)
+                        @foreach (var item in Model.Images.OrderBy(x => x.Sort))
                         {
                             <div class="@((item.Sort - 1) == 0 ? "active" : "") item carousel-item" data-slide-number="@(item.Sort - 1)">
-                                <img src="@item.ImgPath" class="img-fluid">
+                                <img src="@item.ImgPath" class="img-fluid" style="width:360px; height:560px">
                             </div>
                         }
                     </div>
                     <!-- main slider carousel nav controls -->
                     <ul class="carousel-indicators list-inline">
-                        @foreach (var item in Model.Images)
+                        @foreach (var item in Model.Images.OrderBy(x => x.Sort))
                         {
                             <li class="list-inline-item @((item.Sort - 1) == 0 ? "active" : "")">
-                                <a id="carousel-selector-@(item.Sort - 1)" @((item.Sort - 1) == 0 ? "class=\"selected\"" : "") data-slide-to="@(item.Sort - 1)" data-target="#myCarousel">
+                                <a id="carousel-selector-@(item.Sort - 1)" @((item.Sort - 1) == 0 ? "class=selected" : "") data-slide-to="@(item.Sort - 1)" data-target="#myCarousel">
                                     <img src="@item.ImgPath" class="img-fluid">
                                 </a>
                             </li>
@@ -41,20 +41,21 @@
                 <!--/main slider carousel-->
             </div>
             <div class="col-md-6 slider-content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Lorem Ipsum has been the book. </p>
-                <p>t has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and</p>
+                <div>
+                    @Html.Raw(Model.Description)
+                </div>
                 <ul>
                     <li>
                         <span class="name">Digital List Price</span><span class="clm">:</span>
-                        <span class="price">$4.71</span>
+                        <span class="price">@Model.Price.ToString("c")</span>
                     </li>
                     <li>
                         <span class="name">Print List Price</span><span class="clm">:</span>
-                        <span class="price">$10.99</span>
+                        <span class="price">@Model.Price.ToString("c")</span>
                     </li>
                     <li>
                         <span class="name">Kindle Price</span><span class="clm">:</span>
-                        <span class="price final">$3.37</span>
+                        <span class="price final">@Model.Price.ToString("c")</span>
                     </li>
                     <li><span class="save-cost">Save $7.62 (69%)</span></li>
                 </ul>
