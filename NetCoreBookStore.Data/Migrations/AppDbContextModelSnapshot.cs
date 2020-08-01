@@ -96,8 +96,8 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("a40bcfd4-4acf-45b1-9472-ec3b56483299"),
-                            RoleId = new Guid("a40bcfd4-4acf-45b1-9472-ec3b56483299")
+                            UserId = new Guid("b132c356-3cf7-4264-a049-73fb409b83f6"),
+                            RoleId = new Guid("b132c356-3cf7-4264-a049-73fb409b83f6")
                         });
                 });
 
@@ -148,8 +148,8 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a40bcfd4-4acf-45b1-9472-ec3b56483299"),
-                            ConcurrencyStamp = "e5cd344a-e550-4e2d-9778-ea41834dc307",
+                            Id = new Guid("b132c356-3cf7-4264-a049-73fb409b83f6"),
+                            ConcurrencyStamp = "2ae44942-3995-47a8-ac9f-e721a0930d8e",
                             Description = "Admin role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -226,10 +226,10 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a40bcfd4-4acf-45b1-9472-ec3b56483299"),
+                            Id = new Guid("b132c356-3cf7-4264-a049-73fb409b83f6"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "724ae484-e0d5-4b73-b264-e6345205ba52",
-                            Dob = new DateTime(2020, 8, 1, 6, 22, 36, 264, DateTimeKind.Local).AddTicks(494),
+                            ConcurrencyStamp = "f8d7d222-f539-476a-95fd-b6ab950a398b",
+                            Dob = new DateTime(2020, 8, 1, 10, 19, 52, 904, DateTimeKind.Local).AddTicks(8864),
                             Email = "app-admin@abc.xyz",
                             EmailConfirmed = true,
                             FirstName = "Admin",
@@ -237,7 +237,7 @@ namespace NetCoreBookStore.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "app-admin@abc.xyz",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOfc/VrUfBOQCcIBbM94m79vZBRufQZYLdN3KTfss9pjjVwTVOUYWnDEejvHsECzHg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHG4M3QfM5UNqdnx4AX9KBKjM/mjYg2+POtuCwxPuGZAd+5aEXWHm3YCBCVDJNnMVA==",
                             PhoneNumber = "0985123745",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
@@ -294,300 +294,300 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9bb6c949-1bea-48a6-94a0-f2c4b1614b81",
+                            Id = "15dde85c-1320-404e-9f73-5e8e93d09a01",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 246, DateTimeKind.Local).AddTicks(1815),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 891, DateTimeKind.Local).AddTicks(910),
                             Description = "<p>Book 1 is simply dummy text of the printing and typesetting industry. Book 1 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 1 has been the book. </p><p>Book 1's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-1",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 247, DateTimeKind.Local).AddTicks(955),
+                            Price = 44.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 892, DateTimeKind.Local).AddTicks(1258),
                             Status = 1,
                             Title = "Book 1"
                         },
                         new
                         {
-                            Id = "446d4499-bd54-46e1-b93f-45b7e38101e1",
+                            Id = "897d3b35-2fdc-413b-a7d2-69a9f0d5ccda",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(15),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1018),
                             Description = "<p>Book 5 is simply dummy text of the printing and typesetting industry. Book 5 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 5 has been the book. </p><p>Book 5's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-5",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(31),
+                            Price = 49.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1034),
                             Status = 1,
                             Title = "Book 5"
                         },
                         new
                         {
-                            Id = "60300f7c-2afd-4309-882e-0e821bfbfed0",
+                            Id = "41246deb-a426-405a-932c-e8584cebef4a",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(291),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1328),
                             Description = "<p>Book 9 is simply dummy text of the printing and typesetting industry. Book 9 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 9 has been the book. </p><p>Book 9's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-9",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(293),
+                            Price = 37.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1331),
                             Status = 1,
                             Title = "Book 9"
                         },
                         new
                         {
-                            Id = "6fbc53ee-78f0-4f73-a7f7-ec42084e1a2c",
+                            Id = "16a64741-1a60-4869-b82e-63d01bd6bca4",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(340),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1384),
                             Description = "<p>Book 13 is simply dummy text of the printing and typesetting industry. Book 13 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 13 has been the book. </p><p>Book 13's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-13",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(342),
+                            Price = 44.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1386),
                             Status = 1,
                             Title = "Book 13"
                         },
                         new
                         {
-                            Id = "8fc1ddfe-4880-4ff8-b265-0e6f57afc1c1",
+                            Id = "6e8f0d97-2e30-4e35-b502-924e32443a92",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(387),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1431),
                             Description = "<p>Book 17 is simply dummy text of the printing and typesetting industry. Book 17 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 17 has been the book. </p><p>Book 17's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-17",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(388),
+                            Price = 51.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1432),
                             Status = 1,
                             Title = "Book 17"
                         },
                         new
                         {
-                            Id = "c0750072-426c-44cd-92d7-39bd02c71cf0",
+                            Id = "fb10958e-e137-49d5-83ca-fceb33d618aa",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(429),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1475),
                             Description = "<p>Book 21 is simply dummy text of the printing and typesetting industry. Book 21 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 21 has been the book. </p><p>Book 21's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-21",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(430),
+                            Price = 44.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1476),
                             Status = 1,
                             Title = "Book 21"
                         },
                         new
                         {
-                            Id = "d6981c48-11c1-41d6-be9e-cf2a60dda2c6",
+                            Id = "b3af735c-3d10-4c6e-a384-0727c0e42d81",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(521),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1548),
                             Description = "<p>Book 25 is simply dummy text of the printing and typesetting industry. Book 25 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 25 has been the book. </p><p>Book 25's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-25",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(522),
+                            Price = 43.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1549),
                             Status = 1,
                             Title = "Book 25"
                         },
                         new
                         {
-                            Id = "80a14e57-b9a4-47e9-9144-627e5b1668ee",
+                            Id = "d8e689f3-6d5e-4e3e-aae9-96c75242bf79",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(563),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1592),
                             Description = "<p>Book 29 is simply dummy text of the printing and typesetting industry. Book 29 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 29 has been the book. </p><p>Book 29's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-29",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(564),
+                            Price = 52.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1593),
                             Status = 1,
                             Title = "Book 29"
                         },
                         new
                         {
-                            Id = "ff2d5ebc-7a8f-467b-a983-357f33693840",
+                            Id = "23a03cb1-bbe0-439e-b3ad-8a32b9629b90",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(606),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1635),
                             Description = "<p>Book 33 is simply dummy text of the printing and typesetting industry. Book 33 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 33 has been the book. </p><p>Book 33's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-33",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(608),
+                            Price = 45.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1636),
                             Status = 1,
                             Title = "Book 33"
                         },
                         new
                         {
-                            Id = "749ca424-9791-4693-a85a-0e1c955ac5f9",
+                            Id = "fc23afbf-a380-4fc4-b7f2-fdb0838ff8cb",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(647),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1678),
                             Description = "<p>Book 37 is simply dummy text of the printing and typesetting industry. Book 37 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 37 has been the book. </p><p>Book 37's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-37",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(648),
+                            Price = 47.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1679),
                             Status = 1,
                             Title = "Book 37"
                         },
                         new
                         {
-                            Id = "8d8bea9a-7125-49ec-99e9-1596eb1058f8",
+                            Id = "1d0d3674-0ef1-439c-b056-a9aa16323218",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(758),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1749),
                             Description = "<p>Book 41 is simply dummy text of the printing and typesetting industry. Book 41 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 41 has been the book. </p><p>Book 41's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-41",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(760),
+                            Price = 56.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1751),
                             Status = 1,
                             Title = "Book 41"
                         },
                         new
                         {
-                            Id = "a10023f7-a765-4782-bc89-4891c2bc90dd",
+                            Id = "73e4f44b-ac8c-4463-86e0-9bb1bf4e0f6e",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(803),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1794),
                             Description = "<p>Book 45 is simply dummy text of the printing and typesetting industry. Book 45 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 45 has been the book. </p><p>Book 45's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-45",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(804),
+                            Price = 54.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1795),
                             Status = 1,
                             Title = "Book 45"
                         },
                         new
                         {
-                            Id = "376cebea-4428-4746-8376-2055cd19c285",
+                            Id = "91ca8d0c-c0bc-431a-ace8-0931cbac0586",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(846),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1836),
                             Description = "<p>Book 49 is simply dummy text of the printing and typesetting industry. Book 49 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 49 has been the book. </p><p>Book 49's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-49",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(847),
+                            Price = 41.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1837),
                             Status = 1,
                             Title = "Book 49"
                         },
                         new
                         {
-                            Id = "e5db32f1-4e3a-489e-b22f-c4b2c415949f",
+                            Id = "44e65d3f-7b59-4c75-999b-ff090b00af0d",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(885),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1875),
                             Description = "<p>Book 53 is simply dummy text of the printing and typesetting industry. Book 53 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 53 has been the book. </p><p>Book 53's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-53",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(886),
+                            Price = 51.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1876),
                             Status = 1,
                             Title = "Book 53"
                         },
                         new
                         {
-                            Id = "419ea699-6f65-4918-9aa6-183bf61f3ab2",
+                            Id = "db27d1c5-aefb-4b36-9ac9-6d2d44ffa694",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(959),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1943),
                             Description = "<p>Book 57 is simply dummy text of the printing and typesetting industry. Book 57 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 57 has been the book. </p><p>Book 57's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-57",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(960),
+                            Price = 51.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1944),
                             Status = 1,
                             Title = "Book 57"
                         },
                         new
                         {
-                            Id = "e2d9cf0c-baa4-464b-9071-17db23fc3557",
+                            Id = "da470b9d-ed8a-4833-b42b-e7550f4d0370",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1001),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1985),
                             Description = "<p>Book 61 is simply dummy text of the printing and typesetting industry. Book 61 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 61 has been the book. </p><p>Book 61's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-61",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1002),
+                            Price = 53.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(1986),
                             Status = 1,
                             Title = "Book 61"
                         },
                         new
                         {
-                            Id = "139dc314-c48d-4713-86ad-b51f83daed0c",
+                            Id = "78e16958-4aef-4420-b1bf-9be01ae5ae1c",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1044),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2028),
                             Description = "<p>Book 65 is simply dummy text of the printing and typesetting industry. Book 65 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 65 has been the book. </p><p>Book 65's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-65",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1045),
+                            Price = 56.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2030),
                             Status = 1,
                             Title = "Book 65"
                         },
                         new
                         {
-                            Id = "354f07d6-112a-4f7e-ba82-cd8bc0cefddf",
+                            Id = "421cc82f-ab9e-4279-8b66-a584dd7c5a17",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1085),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2068),
                             Description = "<p>Book 69 is simply dummy text of the printing and typesetting industry. Book 69 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 69 has been the book. </p><p>Book 69's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-69",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1086),
+                            Price = 53.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2070),
                             Status = 1,
                             Title = "Book 69"
                         },
                         new
                         {
-                            Id = "e8cff779-7531-41da-add2-635dac60d139",
+                            Id = "74b4e779-4568-4ce7-89cd-910d538de1de",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1158),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2110),
                             Description = "<p>Book 73 is simply dummy text of the printing and typesetting industry. Book 73 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 73 has been the book. </p><p>Book 73's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-73",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1159),
+                            Price = 56.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2112),
                             Status = 1,
                             Title = "Book 73"
                         },
                         new
                         {
-                            Id = "a3cfcdda-639b-4342-b8af-22e9c907ff83",
+                            Id = "a52af41f-d5aa-49f2-8a17-588e55cb63d2",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1200),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2207),
                             Description = "<p>Book 77 is simply dummy text of the printing and typesetting industry. Book 77 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 77 has been the book. </p><p>Book 77's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-77",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1201),
+                            Price = 56.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2208),
                             Status = 1,
                             Title = "Book 77"
                         },
                         new
                         {
-                            Id = "7d45aa39-b7fe-408d-b606-2729cc45929b",
+                            Id = "4d822ec7-4778-42eb-a57a-7744bce1c4c2",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1278),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2265),
                             Description = "<p>Book 81 is simply dummy text of the printing and typesetting industry. Book 81 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 81 has been the book. </p><p>Book 81's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-81",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1280),
+                            Price = 56.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2266),
                             Status = 1,
                             Title = "Book 81"
                         },
                         new
                         {
-                            Id = "a73606f5-d76a-46d8-91bb-9737dec3064c",
+                            Id = "dc2726ed-54fb-4325-809e-0e9337dbedda",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1348),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2308),
                             Description = "<p>Book 85 is simply dummy text of the printing and typesetting industry. Book 85 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 85 has been the book. </p><p>Book 85's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-85",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1350),
+                            Price = 52.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2309),
                             Status = 1,
                             Title = "Book 85"
                         },
                         new
                         {
-                            Id = "fc9d65bd-7e00-4242-9bf8-39b83736a79f",
+                            Id = "665c42b0-cab8-4a6d-aa40-ee129e5648d7",
                             AvailableQuantity = 100,
-                            CreatedDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1425),
+                            CreatedDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2408),
                             Description = "<p>Book 89 is simply dummy text of the printing and typesetting industry. Book 89 has been the industry's printer took a galley of type and Scrambled it to make a type and typesetting industry. Book 89 has been the book. </p><p>Book 89's Description here  </p>",
                             Edition = 2020,
                             NameAlias = "book-89",
-                            Price = 33000.0,
-                            PublicationDate = new DateTime(2020, 8, 1, 6, 22, 36, 248, DateTimeKind.Local).AddTicks(1427),
+                            Price = 51.0,
+                            PublicationDate = new DateTime(2020, 8, 1, 10, 19, 52, 893, DateTimeKind.Local).AddTicks(2410),
                             Status = 1,
                             Title = "Book 89"
                         });
@@ -620,552 +620,552 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e09087cd-5ae5-4e27-aa71-044ad0a909c1",
-                            BookId = "9bb6c949-1bea-48a6-94a0-f2c4b1614b81",
+                            Id = "d52c381e-71d4-4b92-9ae8-ad26ac9cb6a7",
+                            BookId = "15dde85c-1320-404e-9f73-5e8e93d09a01",
                             Description = "Book 1",
                             ImgPath = "/MyStaticFiles/images/book-1.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "c930f692-da87-45a9-af78-a69264cc857a",
-                            BookId = "9bb6c949-1bea-48a6-94a0-f2c4b1614b81",
+                            Id = "dff0b5cb-fcca-4826-9ad8-532efdff9ee2",
+                            BookId = "15dde85c-1320-404e-9f73-5e8e93d09a01",
                             Description = "Book 1",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "a2ca6675-7902-485a-a8cc-7d864923596c",
-                            BookId = "9bb6c949-1bea-48a6-94a0-f2c4b1614b81",
+                            Id = "00c74f77-6f6e-43d2-b25d-00e8ddc90ba7",
+                            BookId = "15dde85c-1320-404e-9f73-5e8e93d09a01",
                             Description = "Book 1",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "fbfdbb80-4a46-4700-8ba9-bd9a89329eff",
-                            BookId = "446d4499-bd54-46e1-b93f-45b7e38101e1",
+                            Id = "b1953e14-141f-4044-aa84-83b3deb536c5",
+                            BookId = "897d3b35-2fdc-413b-a7d2-69a9f0d5ccda",
                             Description = "Book 5",
                             ImgPath = "/MyStaticFiles/images/book-5.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "0222ed86-816f-4047-b204-7014f9918a38",
-                            BookId = "446d4499-bd54-46e1-b93f-45b7e38101e1",
+                            Id = "11161700-4bff-4756-878d-40f9d89cb14c",
+                            BookId = "897d3b35-2fdc-413b-a7d2-69a9f0d5ccda",
                             Description = "Book 5",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "032bdcc3-920f-41eb-9077-313c4a6737f6",
-                            BookId = "446d4499-bd54-46e1-b93f-45b7e38101e1",
+                            Id = "fca98d0b-5005-42c3-968a-4d3d79c847a3",
+                            BookId = "897d3b35-2fdc-413b-a7d2-69a9f0d5ccda",
                             Description = "Book 5",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "a60a3014-7783-4c27-8f54-a5af4b198cde",
-                            BookId = "60300f7c-2afd-4309-882e-0e821bfbfed0",
+                            Id = "972d5f5d-9c03-4eb6-bf28-31c291a7c129",
+                            BookId = "41246deb-a426-405a-932c-e8584cebef4a",
                             Description = "Book 9",
                             ImgPath = "/MyStaticFiles/images/book-9.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "7abd4691-627d-43c8-9eac-af302b8bc419",
-                            BookId = "60300f7c-2afd-4309-882e-0e821bfbfed0",
+                            Id = "ac8fa01f-d900-4866-b892-8ab35b3f6f51",
+                            BookId = "41246deb-a426-405a-932c-e8584cebef4a",
                             Description = "Book 9",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "033c668d-7ad0-433e-8fe1-c9b01e83e337",
-                            BookId = "60300f7c-2afd-4309-882e-0e821bfbfed0",
+                            Id = "75533d75-9275-4e4a-afc0-2ffc6116e5b2",
+                            BookId = "41246deb-a426-405a-932c-e8584cebef4a",
                             Description = "Book 9",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "1d1f2471-c903-4141-8d12-2c52edfeed4d",
-                            BookId = "6fbc53ee-78f0-4f73-a7f7-ec42084e1a2c",
+                            Id = "c6f52b55-7f28-43b9-bc78-8b69174affe5",
+                            BookId = "16a64741-1a60-4869-b82e-63d01bd6bca4",
                             Description = "Book 13",
                             ImgPath = "/MyStaticFiles/images/book-13.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "854129eb-9e55-4557-b3ed-299deb2e4444",
-                            BookId = "6fbc53ee-78f0-4f73-a7f7-ec42084e1a2c",
+                            Id = "df44d4a5-902a-4caf-a921-fdee82d266d5",
+                            BookId = "16a64741-1a60-4869-b82e-63d01bd6bca4",
                             Description = "Book 13",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "b2c53df1-061b-4045-9864-9075bd00874f",
-                            BookId = "6fbc53ee-78f0-4f73-a7f7-ec42084e1a2c",
+                            Id = "a8fe4853-2cf4-407f-9f80-88a8c48e2427",
+                            BookId = "16a64741-1a60-4869-b82e-63d01bd6bca4",
                             Description = "Book 13",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "a0c7678f-433b-45f7-a666-9fd6ce842b46",
-                            BookId = "8fc1ddfe-4880-4ff8-b265-0e6f57afc1c1",
+                            Id = "b00e733b-1d8f-49f5-ad52-ae7ed2eaaa3a",
+                            BookId = "6e8f0d97-2e30-4e35-b502-924e32443a92",
                             Description = "Book 17",
                             ImgPath = "/MyStaticFiles/images/book-17.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "6da96542-660a-4f37-b0d6-d00cb1f87222",
-                            BookId = "8fc1ddfe-4880-4ff8-b265-0e6f57afc1c1",
+                            Id = "cd67f7db-054f-4177-9e11-40e5bc227724",
+                            BookId = "6e8f0d97-2e30-4e35-b502-924e32443a92",
                             Description = "Book 17",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "63600634-83a1-4cc3-b0c3-07b144ca6d2c",
-                            BookId = "8fc1ddfe-4880-4ff8-b265-0e6f57afc1c1",
+                            Id = "e59ee496-98cc-460d-9aef-f0c6be975197",
+                            BookId = "6e8f0d97-2e30-4e35-b502-924e32443a92",
                             Description = "Book 17",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "55d97c95-8a30-4892-bc5a-d699e11c71ae",
-                            BookId = "c0750072-426c-44cd-92d7-39bd02c71cf0",
+                            Id = "dd021c84-922e-4471-98f1-1ce34114bbe3",
+                            BookId = "fb10958e-e137-49d5-83ca-fceb33d618aa",
                             Description = "Book 21",
                             ImgPath = "/MyStaticFiles/images/book-21.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "ec1afb29-3592-4004-b08b-8e773ef0d272",
-                            BookId = "c0750072-426c-44cd-92d7-39bd02c71cf0",
+                            Id = "c6159448-d249-4e21-b53c-47ad59f0da0f",
+                            BookId = "fb10958e-e137-49d5-83ca-fceb33d618aa",
                             Description = "Book 21",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "c0dea46d-30ee-4eea-bf57-e873f68d54c1",
-                            BookId = "c0750072-426c-44cd-92d7-39bd02c71cf0",
+                            Id = "c509b1e5-4bb6-4fad-8d05-cd2c0dd325a5",
+                            BookId = "fb10958e-e137-49d5-83ca-fceb33d618aa",
                             Description = "Book 21",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "89f3d676-c94d-47e7-a98b-91515821719a",
-                            BookId = "d6981c48-11c1-41d6-be9e-cf2a60dda2c6",
+                            Id = "8f47e025-29d2-480d-bf38-3dbf3dae535f",
+                            BookId = "b3af735c-3d10-4c6e-a384-0727c0e42d81",
                             Description = "Book 25",
                             ImgPath = "/MyStaticFiles/images/book-25.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "8bfec877-3583-4755-92b4-dbd75eef95bc",
-                            BookId = "d6981c48-11c1-41d6-be9e-cf2a60dda2c6",
+                            Id = "63f7f695-0249-45d8-a066-f739196ed775",
+                            BookId = "b3af735c-3d10-4c6e-a384-0727c0e42d81",
                             Description = "Book 25",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "a99537c3-e60d-40bb-a607-c8d0ef78c352",
-                            BookId = "d6981c48-11c1-41d6-be9e-cf2a60dda2c6",
+                            Id = "aee8399b-800c-437d-bd06-508f58139681",
+                            BookId = "b3af735c-3d10-4c6e-a384-0727c0e42d81",
                             Description = "Book 25",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "670cdb48-b36d-4c56-b5c2-06b318c88983",
-                            BookId = "80a14e57-b9a4-47e9-9144-627e5b1668ee",
+                            Id = "e274af1a-f30f-4259-884a-ef8cf223caf4",
+                            BookId = "d8e689f3-6d5e-4e3e-aae9-96c75242bf79",
                             Description = "Book 29",
                             ImgPath = "/MyStaticFiles/images/book-29.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "5cc375c6-d3d1-41de-8f00-b828033b4e5c",
-                            BookId = "80a14e57-b9a4-47e9-9144-627e5b1668ee",
+                            Id = "6b342709-f739-4e1a-98f5-87d23e05d55f",
+                            BookId = "d8e689f3-6d5e-4e3e-aae9-96c75242bf79",
                             Description = "Book 29",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "5f4c60eb-fa81-4955-8276-dda97ce920d6",
-                            BookId = "80a14e57-b9a4-47e9-9144-627e5b1668ee",
+                            Id = "0a51877d-b9d1-4385-9bf2-6490e278e3bb",
+                            BookId = "d8e689f3-6d5e-4e3e-aae9-96c75242bf79",
                             Description = "Book 29",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "21c826e6-74f2-4fba-a63d-f77ea5019c93",
-                            BookId = "ff2d5ebc-7a8f-467b-a983-357f33693840",
+                            Id = "82c5531f-165e-4d96-a63d-46a7605a5e1f",
+                            BookId = "23a03cb1-bbe0-439e-b3ad-8a32b9629b90",
                             Description = "Book 33",
                             ImgPath = "/MyStaticFiles/images/book-33.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "57c7421b-01b2-473b-ad47-fa85021252bf",
-                            BookId = "ff2d5ebc-7a8f-467b-a983-357f33693840",
+                            Id = "b5929100-82a3-4b87-93b3-f69a542a91c3",
+                            BookId = "23a03cb1-bbe0-439e-b3ad-8a32b9629b90",
                             Description = "Book 33",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "aed86228-93d9-4f4d-873a-07107987c56c",
-                            BookId = "ff2d5ebc-7a8f-467b-a983-357f33693840",
+                            Id = "17fc1915-0746-44a9-8424-975c27a62212",
+                            BookId = "23a03cb1-bbe0-439e-b3ad-8a32b9629b90",
                             Description = "Book 33",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "f77d63d6-18ca-4775-bf92-2bb16e0703ed",
-                            BookId = "749ca424-9791-4693-a85a-0e1c955ac5f9",
+                            Id = "5452f8a3-95ad-4f5d-ac33-b2b5253676e9",
+                            BookId = "fc23afbf-a380-4fc4-b7f2-fdb0838ff8cb",
                             Description = "Book 37",
                             ImgPath = "/MyStaticFiles/images/book-37.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "035785df-9fa3-44e0-86c2-29f14c5f74bd",
-                            BookId = "749ca424-9791-4693-a85a-0e1c955ac5f9",
+                            Id = "3faf57fa-2c53-46cd-a72e-999b58c0a2cf",
+                            BookId = "fc23afbf-a380-4fc4-b7f2-fdb0838ff8cb",
                             Description = "Book 37",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "f4ac4031-3ab4-4598-9b2a-b1b3ada80b77",
-                            BookId = "749ca424-9791-4693-a85a-0e1c955ac5f9",
+                            Id = "9e7566ee-bc32-4f40-9e09-c65c1a80bb59",
+                            BookId = "fc23afbf-a380-4fc4-b7f2-fdb0838ff8cb",
                             Description = "Book 37",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "8ded87ff-5edd-42e9-b51c-80909df4ff65",
-                            BookId = "8d8bea9a-7125-49ec-99e9-1596eb1058f8",
+                            Id = "cc7818bc-2a48-4c96-9645-d5410031dbda",
+                            BookId = "1d0d3674-0ef1-439c-b056-a9aa16323218",
                             Description = "Book 41",
                             ImgPath = "/MyStaticFiles/images/book-41.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "e6bbb354-68dd-40f5-8e64-4ed74c552ed5",
-                            BookId = "8d8bea9a-7125-49ec-99e9-1596eb1058f8",
+                            Id = "acc3a647-de93-4dc6-a9fb-34959ced098f",
+                            BookId = "1d0d3674-0ef1-439c-b056-a9aa16323218",
                             Description = "Book 41",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "35b486d1-773e-4dd0-ae10-105b0e45d016",
-                            BookId = "8d8bea9a-7125-49ec-99e9-1596eb1058f8",
+                            Id = "e3787bd2-9a92-4153-a235-18c279e20e14",
+                            BookId = "1d0d3674-0ef1-439c-b056-a9aa16323218",
                             Description = "Book 41",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "50f68694-d058-4007-9386-8faa82453a6f",
-                            BookId = "a10023f7-a765-4782-bc89-4891c2bc90dd",
+                            Id = "872f6653-cdca-449f-84ee-bb5aa2860a66",
+                            BookId = "73e4f44b-ac8c-4463-86e0-9bb1bf4e0f6e",
                             Description = "Book 45",
                             ImgPath = "/MyStaticFiles/images/book-45.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "6adcc4ae-4a8f-495f-aed0-3c1cd0cf1b9c",
-                            BookId = "a10023f7-a765-4782-bc89-4891c2bc90dd",
+                            Id = "e95a4538-3120-49c0-95cc-977d57f914fd",
+                            BookId = "73e4f44b-ac8c-4463-86e0-9bb1bf4e0f6e",
                             Description = "Book 45",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "a50a0d2c-e867-4a61-8e26-b3ef796029af",
-                            BookId = "a10023f7-a765-4782-bc89-4891c2bc90dd",
+                            Id = "a5da2497-748e-4665-9273-18caea6ed452",
+                            BookId = "73e4f44b-ac8c-4463-86e0-9bb1bf4e0f6e",
                             Description = "Book 45",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "d9bd02b1-96ca-44b6-b83b-5bbc2f99a019",
-                            BookId = "376cebea-4428-4746-8376-2055cd19c285",
+                            Id = "bb33a74d-61e5-499d-acbe-db3c11eb6500",
+                            BookId = "91ca8d0c-c0bc-431a-ace8-0931cbac0586",
                             Description = "Book 49",
                             ImgPath = "/MyStaticFiles/images/book-49.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "40110ada-93ac-40c5-849a-8ec6c933478a",
-                            BookId = "376cebea-4428-4746-8376-2055cd19c285",
+                            Id = "b54fb8cd-62d8-469b-ba7e-7bcedd42fb75",
+                            BookId = "91ca8d0c-c0bc-431a-ace8-0931cbac0586",
                             Description = "Book 49",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "77ca25aa-07b7-49b8-958c-d5a4adc90b0a",
-                            BookId = "376cebea-4428-4746-8376-2055cd19c285",
+                            Id = "db8e5a51-f422-4138-812d-63a028403fe8",
+                            BookId = "91ca8d0c-c0bc-431a-ace8-0931cbac0586",
                             Description = "Book 49",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "58c74c5b-43c2-47d7-974a-5494ec8dede0",
-                            BookId = "e5db32f1-4e3a-489e-b22f-c4b2c415949f",
+                            Id = "a9aeb948-8123-4d22-afd3-e529f571f918",
+                            BookId = "44e65d3f-7b59-4c75-999b-ff090b00af0d",
                             Description = "Book 53",
                             ImgPath = "/MyStaticFiles/images/book-53.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "357626b4-93a1-4824-8292-d46d9defdf26",
-                            BookId = "e5db32f1-4e3a-489e-b22f-c4b2c415949f",
+                            Id = "7f6d5e46-50f1-4fbf-ac45-d80374f6dc96",
+                            BookId = "44e65d3f-7b59-4c75-999b-ff090b00af0d",
                             Description = "Book 53",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "7dcb7a2d-acd4-4081-a703-d513d5b907ab",
-                            BookId = "e5db32f1-4e3a-489e-b22f-c4b2c415949f",
+                            Id = "5a8393de-c616-4256-91bd-5f35145c0365",
+                            BookId = "44e65d3f-7b59-4c75-999b-ff090b00af0d",
                             Description = "Book 53",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "1fa5d7b7-d538-4fa3-af1f-1468ab08bea9",
-                            BookId = "419ea699-6f65-4918-9aa6-183bf61f3ab2",
+                            Id = "7f708594-0e1e-4f5a-b440-8b7cb3fddd90",
+                            BookId = "db27d1c5-aefb-4b36-9ac9-6d2d44ffa694",
                             Description = "Book 57",
                             ImgPath = "/MyStaticFiles/images/book-57.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "5f53efd8-cc61-4d01-8a8d-558262dd0181",
-                            BookId = "419ea699-6f65-4918-9aa6-183bf61f3ab2",
+                            Id = "c53de695-7afd-4776-931e-19567d283039",
+                            BookId = "db27d1c5-aefb-4b36-9ac9-6d2d44ffa694",
                             Description = "Book 57",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "aeefc476-c30f-4a22-b226-4d95ef64a470",
-                            BookId = "419ea699-6f65-4918-9aa6-183bf61f3ab2",
+                            Id = "4cce2cb6-9b22-47d3-a1ee-b29306dd01e7",
+                            BookId = "db27d1c5-aefb-4b36-9ac9-6d2d44ffa694",
                             Description = "Book 57",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "7142a848-6b6d-41e5-9f78-0ecd48e15d48",
-                            BookId = "e2d9cf0c-baa4-464b-9071-17db23fc3557",
+                            Id = "eab44d13-77b8-42b8-a42a-090cbfcf1e67",
+                            BookId = "da470b9d-ed8a-4833-b42b-e7550f4d0370",
                             Description = "Book 61",
                             ImgPath = "/MyStaticFiles/images/book-61.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "7b2a1227-689c-4e4a-b9bd-8ed5beadefbe",
-                            BookId = "e2d9cf0c-baa4-464b-9071-17db23fc3557",
+                            Id = "4a346761-fb16-4a15-a12d-87ee43e209d0",
+                            BookId = "da470b9d-ed8a-4833-b42b-e7550f4d0370",
                             Description = "Book 61",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "736efc68-fd67-44d2-b176-612db0fb5268",
-                            BookId = "e2d9cf0c-baa4-464b-9071-17db23fc3557",
+                            Id = "a57c2001-89fc-46d3-bb41-789c1e2fb8b3",
+                            BookId = "da470b9d-ed8a-4833-b42b-e7550f4d0370",
                             Description = "Book 61",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "efeed228-222a-4ac2-953d-efd32eb0d85f",
-                            BookId = "139dc314-c48d-4713-86ad-b51f83daed0c",
+                            Id = "a0f6cebc-e78d-499a-bef9-4872333166d6",
+                            BookId = "78e16958-4aef-4420-b1bf-9be01ae5ae1c",
                             Description = "Book 65",
                             ImgPath = "/MyStaticFiles/images/book-65.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "cda1a5b4-65b8-4e68-a596-79bbc5d5efd5",
-                            BookId = "139dc314-c48d-4713-86ad-b51f83daed0c",
+                            Id = "33d45fa8-9028-4efd-9727-4ebd950e327f",
+                            BookId = "78e16958-4aef-4420-b1bf-9be01ae5ae1c",
                             Description = "Book 65",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "99e9708a-f4dc-40b9-87f2-6424f0b1a0dd",
-                            BookId = "139dc314-c48d-4713-86ad-b51f83daed0c",
+                            Id = "906bfbee-d0ec-49cd-9797-bd582c03331a",
+                            BookId = "78e16958-4aef-4420-b1bf-9be01ae5ae1c",
                             Description = "Book 65",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "76bbd5b1-5608-4a20-b45a-845ee7cc7d01",
-                            BookId = "354f07d6-112a-4f7e-ba82-cd8bc0cefddf",
+                            Id = "2c6c6696-4c3e-407b-8c06-d249520a90e4",
+                            BookId = "421cc82f-ab9e-4279-8b66-a584dd7c5a17",
                             Description = "Book 69",
                             ImgPath = "/MyStaticFiles/images/book-69.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "233f1155-f930-455f-9a6d-bbe812e37823",
-                            BookId = "354f07d6-112a-4f7e-ba82-cd8bc0cefddf",
+                            Id = "0ee1fda6-a9c7-42b8-975f-39071a2aa559",
+                            BookId = "421cc82f-ab9e-4279-8b66-a584dd7c5a17",
                             Description = "Book 69",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "047845d7-96cf-47d9-bf65-61080ff49db5",
-                            BookId = "354f07d6-112a-4f7e-ba82-cd8bc0cefddf",
+                            Id = "ec5c3a91-1e66-41bf-a94a-af4f56e96d3a",
+                            BookId = "421cc82f-ab9e-4279-8b66-a584dd7c5a17",
                             Description = "Book 69",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "d39bb4c8-d420-4676-a833-742630d75f1d",
-                            BookId = "e8cff779-7531-41da-add2-635dac60d139",
+                            Id = "5018922c-063f-42cb-839a-fe9d5313e0df",
+                            BookId = "74b4e779-4568-4ce7-89cd-910d538de1de",
                             Description = "Book 73",
                             ImgPath = "/MyStaticFiles/images/book-73.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "cf76b9f2-aa42-4cd7-9073-7b8cba48ad66",
-                            BookId = "e8cff779-7531-41da-add2-635dac60d139",
+                            Id = "c5231ef6-f271-4d05-a126-d23fadaf9a45",
+                            BookId = "74b4e779-4568-4ce7-89cd-910d538de1de",
                             Description = "Book 73",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "e4878983-1ae7-4a71-bc99-ed5fc553656f",
-                            BookId = "e8cff779-7531-41da-add2-635dac60d139",
+                            Id = "93d69ae5-9943-45ca-8ce9-453c5d1d3da3",
+                            BookId = "74b4e779-4568-4ce7-89cd-910d538de1de",
                             Description = "Book 73",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "2be05978-1ddf-4c16-80eb-15ebe83ea6a7",
-                            BookId = "a3cfcdda-639b-4342-b8af-22e9c907ff83",
+                            Id = "df5a124d-bb31-45d8-929b-108852884a49",
+                            BookId = "a52af41f-d5aa-49f2-8a17-588e55cb63d2",
                             Description = "Book 77",
                             ImgPath = "/MyStaticFiles/images/book-77.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "df4f0cb0-e1a7-4736-9f6f-2e9cd4751d5a",
-                            BookId = "a3cfcdda-639b-4342-b8af-22e9c907ff83",
+                            Id = "9429a39f-a09f-4553-9b06-ead931e997af",
+                            BookId = "a52af41f-d5aa-49f2-8a17-588e55cb63d2",
                             Description = "Book 77",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "b3d431e4-2a45-487d-9495-68c6e77d417c",
-                            BookId = "a3cfcdda-639b-4342-b8af-22e9c907ff83",
+                            Id = "af26c9d6-e259-4bc4-9215-410be0970fa4",
+                            BookId = "a52af41f-d5aa-49f2-8a17-588e55cb63d2",
                             Description = "Book 77",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "68f4213d-e1d5-422f-a00f-634041b1c921",
-                            BookId = "7d45aa39-b7fe-408d-b606-2729cc45929b",
+                            Id = "c2cd9f23-0dc6-4e72-ac58-c9c1cfafccb8",
+                            BookId = "4d822ec7-4778-42eb-a57a-7744bce1c4c2",
                             Description = "Book 81",
                             ImgPath = "/MyStaticFiles/images/book-81.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "1b41130a-1422-4302-8c4b-d1a38334ce92",
-                            BookId = "7d45aa39-b7fe-408d-b606-2729cc45929b",
+                            Id = "5b85c5f9-845e-43e6-abd7-9216e7febdeb",
+                            BookId = "4d822ec7-4778-42eb-a57a-7744bce1c4c2",
                             Description = "Book 81",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "39737ecd-261b-44c7-bdbe-5ab7fc74bbe3",
-                            BookId = "7d45aa39-b7fe-408d-b606-2729cc45929b",
+                            Id = "af9a8569-8c25-4a83-8ec2-0d997293144e",
+                            BookId = "4d822ec7-4778-42eb-a57a-7744bce1c4c2",
                             Description = "Book 81",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "f2d0b8d5-2a87-4ad8-ade9-788d110e7cae",
-                            BookId = "a73606f5-d76a-46d8-91bb-9737dec3064c",
+                            Id = "b5dd78b6-3459-40fd-bbc7-f5e33902832c",
+                            BookId = "dc2726ed-54fb-4325-809e-0e9337dbedda",
                             Description = "Book 85",
                             ImgPath = "/MyStaticFiles/images/book-85.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "281faead-5f5a-44d5-a294-2c75029a2c21",
-                            BookId = "a73606f5-d76a-46d8-91bb-9737dec3064c",
+                            Id = "9c9391f7-4fc2-4d19-b5e7-4c6c9b4aba94",
+                            BookId = "dc2726ed-54fb-4325-809e-0e9337dbedda",
                             Description = "Book 85",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "0d8d8a32-c72e-4d57-9ae8-601223adb5f6",
-                            BookId = "a73606f5-d76a-46d8-91bb-9737dec3064c",
+                            Id = "8d1fb515-908e-4b22-b91f-dffa213133aa",
+                            BookId = "dc2726ed-54fb-4325-809e-0e9337dbedda",
                             Description = "Book 85",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
                         },
                         new
                         {
-                            Id = "c53c65fe-b296-475f-8bad-62a2f781c6ad",
-                            BookId = "fc9d65bd-7e00-4242-9bf8-39b83736a79f",
+                            Id = "2b428d84-353c-470b-9250-5372fdafb169",
+                            BookId = "665c42b0-cab8-4a6d-aa40-ee129e5648d7",
                             Description = "Book 89",
                             ImgPath = "/MyStaticFiles/images/book-89.jpg",
                             Sort = 1
                         },
                         new
                         {
-                            Id = "db27a8ed-541c-4530-9ffc-48b6c5264d85",
-                            BookId = "fc9d65bd-7e00-4242-9bf8-39b83736a79f",
+                            Id = "680a9610-7648-4f28-88cb-ef33f1a5099d",
+                            BookId = "665c42b0-cab8-4a6d-aa40-ee129e5648d7",
                             Description = "Book 89",
                             ImgPath = "/MyStaticFiles/images/product2.jpg",
                             Sort = 2
                         },
                         new
                         {
-                            Id = "6fa3dabe-cc48-4150-baf9-91085dd0821e",
-                            BookId = "fc9d65bd-7e00-4242-9bf8-39b83736a79f",
+                            Id = "5bf4eb66-3fff-4a21-b312-d29bf8619498",
+                            BookId = "665c42b0-cab8-4a6d-aa40-ee129e5648d7",
                             Description = "Book 89",
                             ImgPath = "/MyStaticFiles/images/product3.jpg",
                             Sort = 3
@@ -1194,13 +1194,13 @@ namespace NetCoreBookStore.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "471e6bd8-a175-449a-9626-b4bbe17d2729",
+                            Id = "9e30eeeb-39e2-4be6-a2ca-9525484f8f58",
                             Name = "Default",
                             Value = 0
                         },
                         new
                         {
-                            Id = "ab4317bb-7b09-4c5d-a655-334a59b5a821",
+                            Id = "24c5fc91-c7f9-4241-aa59-430defe3af81",
                             Name = "Test",
                             Value = 10
                         });
@@ -1219,6 +1219,9 @@ namespace NetCoreBookStore.Data.Migrations
 
                     b.Property<string>("DiscountId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<double>("OrderTotal")
+                        .HasColumnType("float");
 
                     b.Property<int>("State")
                         .HasColumnType("int");

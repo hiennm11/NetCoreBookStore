@@ -25,6 +25,7 @@ namespace NetCoreBookStore.Data.Extensions
             );
 
             var bookList = new List<Book>();
+            var random = new Random();
             for (int i = 1; i <= 90; i+=4)
             {
                 var book = new Book
@@ -36,7 +37,7 @@ namespace NetCoreBookStore.Data.Extensions
                     CreatedDate = DateTime.Now,
                     PublicationDate = DateTime.Now,
                     Edition = 2020,
-                    Price = 33000,
+                    Price = (double)random.Next(35, 57),
                     Status = Enums.Status.Active,
                     Images = new List<BookImage>()
                 };

@@ -33,6 +33,8 @@ namespace NetCoreBookStore
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+
             services.AddScoped<ShoppingCartRepository>(sp => ShoppingCartRepository.GetCart(sp));
             
             services.AddHttpContextAccessor();

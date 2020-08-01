@@ -12,6 +12,7 @@ namespace NetCoreBookStore.Data.Entities
         public DateTime Date { get; set; }
         public string DiscountId { get; set; }
         public State State { get; set; }
+        public double OrderTotal { get; set; }
 
         public AppUser User { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }
