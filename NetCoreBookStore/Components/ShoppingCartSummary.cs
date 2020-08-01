@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NetCoreBookStore.Components
 {
