@@ -21,41 +21,49 @@
             <tbody>
                 @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
                 {
+            <tr>
+                <td>
+                    <figure class="media">
+                        <div class="img-wrap"><img src="@item.Book.Images.FirstOrDefault(x => x.Sort == 1).ImgPath" class="img-thumbnail img-sm"></div>
+                        <figcaption class="media-body">
+                            <h6 class="title text-truncate">@item.Book.Title </h6>
+                            <dl class="param param-inline small">
+                                <dt>Size: </dt>
+                                <dd>XXL</dd>
+                            </dl>
+                            <dl class="param param-inline small">
+                                <dt>Color: </dt>
+                                <dd>Orange color</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    @item.Amount
+                    @*<select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>*@
+                </td>
+                <td>
+                    <div class="price-wrap">
+                        <var class="price">@((item.Amount * item.Book.Price).ToString("c"))</var>
+                        <small class="text-muted">(@item.Book.Price.ToString("c"))</small>
+                    </div> <!-- price-wrap .// -->
+                </td>
+                <td class="text-right">
+                    <a asp-action="RemoveFromShoppingCart" asp-route-bookId="@item.Book.Id" class="btn btn-outline-danger"> × Remove</a>
+                </td>
+            </tr>}
+                @if (Model.ShoppingCartTotal > 0)
+                {
                     <tr>
-                        <td>
-                            <figure class="media">
-                                <div class="img-wrap"><img src="@item.Book.Images.FirstOrDefault(x => x.Sort == 1).ImgPath" class="img-thumbnail img-sm"></div>
-                                <figcaption class="media-body">
-                                    <h6 class="title text-truncate">@item.Book.Title </h6>
-                                    <dl class="param param-inline small">
-                                        <dt>Size: </dt>
-                                        <dd>XXL</dd>
-                                    </dl>
-                                    <dl class="param param-inline small">
-                                        <dt>Color: </dt>
-                                        <dd>Orange color</dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            @item.Amount
-                            @*<select class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>*@
-                        </td>
-                        <td>
-                            <div class="price-wrap">
-                                <var class="price">@((item.Amount * item.Book.Price).ToString("c"))</var>
-                                <small class="text-muted">(@item.Book.Price.ToString("c"))</small>
-                            </div> <!-- price-wrap .// -->
-                        </td>
-                        <td class="text-right">
-                            <a asp-action="RemoveFromShoppingCart" asp-route-bookId="@item.Book.Id" class="btn btn-outline-danger"> × Remove</a>
-                        </td>
+                        <td></td>
+                        <td></td>
+                        <td class="title text-truncate text-danger">Total:</td>
+                        <td class="price">@Model.ShoppingCartTotal.ToString("c")</td>
                     </tr>
                 }
             </tbody>
