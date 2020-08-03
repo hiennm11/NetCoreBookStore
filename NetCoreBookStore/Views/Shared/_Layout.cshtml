@@ -47,10 +47,8 @@
                             </li>
                             <li class="navbar-item">
                                 <a href="faq.html" class="nav-link">FAQ</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="login.html" class="nav-link">Login</a>
-                            </li>
+                            </li>                           
+                            <partial name="_LoginPartial" />
                         </ul>
                         @*Cart*@
                         @await Component.InvokeAsync("ShoppingCartSummary")
@@ -159,5 +157,7 @@
     <script src="~/lib/bootstrap/js/bootstrap.js"></script>
     <script src="~/content/js/owl.carousel.min.js"></script>
     <script src="~/content/js/custom.js"></script>
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

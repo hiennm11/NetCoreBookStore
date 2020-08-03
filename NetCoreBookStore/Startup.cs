@@ -14,6 +14,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Data.EF;
+using NetCoreBookStore.Data.Entities;
 
 namespace NetCoreBookStore
 {
@@ -33,7 +34,8 @@ namespace NetCoreBookStore
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddDefaultIdentity<AppUser>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+            //services.AddIdentityCore<IdentityUser<Guid>, IdentityRole<Guid>>().AddEntityFrameworkStores<AppDbContext>();
 
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
@@ -43,6 +45,7 @@ namespace NetCoreBookStore
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddControllersWithViews();
+            services.AddRazorPages();
 
         }
 
@@ -52,6 +55,12 @@ namespace NetCoreBookStore
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
             }
 
             app.UseHttpsRedirection();
@@ -76,6 +85,7 @@ namespace NetCoreBookStore
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

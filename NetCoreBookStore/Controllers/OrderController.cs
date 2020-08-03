@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Data.ViewModel;
 
 namespace NetCoreBookStore.Controllers
 {
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly ShoppingCartRepository _shoppingCart;
