@@ -19,6 +19,7 @@ namespace NetCoreBookStore.Controllers
         public async Task<IActionResult> List()
         {
             var response = await _bookRepository.GetAllAsync();
+            ViewBag.Recommended = await _bookRepository.GetRecomendedBooksAsync();
             return View(response);
         }
 

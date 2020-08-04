@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace NetCoreBookStore.Core.Repositories
 {
-    public class ShoppingCartRepository
+    public class ShoppingCartRepository : IShoppingCartRepository
     {
         private readonly AppDbContext _appDbContext;
 

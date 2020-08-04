@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreBookStore.Core.Repositories;
+using NetCoreBookStore.Data.Entities;
 using NetCoreBookStore.Data.ViewModel;
 
 namespace NetCoreBookStore.Controllers
@@ -14,16 +16,26 @@ namespace NetCoreBookStore.Controllers
     {
         private readonly ShoppingCartRepository _shoppingCart;
         private readonly IOrderRepository _orderRepository;
+        private readonly UserManager<AppUser> _userManager;
 
-        public OrderController(ShoppingCartRepository shoppingCart, IOrderRepository orderRepository)
+        public OrderController(ShoppingCartRepository shoppingCart, IOrderRepository orderRepository, UserManager<AppUser> userManager)
         {
             this._shoppingCart = shoppingCart;
             this._orderRepository = orderRepository;
+            this._userManager = userManager;
         }
 
-        public IActionResult Checkout()
+        public async Task<IActionResult> Checkout()
         {
-            return View();
+            var user = await _userManager.GetUserAsync(User);
+            var orderVM = new OrderVM
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+            };
+            return View(orderVM);
         }
 
         [HttpPost]
@@ -34,12 +46,12 @@ namespace NetCoreBookStore.Controllers
 
             if(_shoppingCart.ShoppingCartItems.Count() == 0)
             {
-                ModelState.AddModelError("", "Your cart is empty, add some pies first");
+                ModelState.AddModelError("", "Your cart is empty, add some books first");
             }
 
             if (ModelState.IsValid)
             {
-                _orderRepository.PlaceOrder(order);
+                _orderRepository.PlaceOrder(order, _userManager.GetUserId(User));
                 _shoppingCart.ClearCart();
                 return RedirectToAction("CheckoutComplete");
             }

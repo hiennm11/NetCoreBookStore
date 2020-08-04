@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<BookVM>
-
+@{ 
+    ViewData["Title"] = "Book List";
+    var rec = (List<BookVM>)ViewBag.Recommended;
+}
 <div class="breadcrumb">
     <div class="container">
         <a class="breadcrumb-item" href="index.html">Home</a>
@@ -8,10 +11,6 @@
 </div>
 
 <section class="static about-sec">
-    <partial name="_RecommendedBooks" />
-    <partial name="_RecentBooks" />
-    @foreach (var item in Model)
-    {
-        <partial name="_BookItem" model="@item" />
-    }
+    <partial name="_RecommendedBooks" model="@rec"/>
+    <partial name="_RecentBooks" model="@Model" />    
 </section>

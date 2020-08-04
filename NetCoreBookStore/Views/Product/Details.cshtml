@@ -60,8 +60,8 @@
                     <li><span class="save-cost">Save $7.62 (69%)</span></li>
                 </ul>
                 <div class="btn-sec">
-                    <button class="btn ">Add To cart</button>
-                    <button class="btn black">Buy Now</button>
+                    <a class="btn " asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-bookId="@Model.Id">Add To cart</a>
+                    <a class="btn black" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-bookId="@Model.Id">Buy Now</a>
                 </div>
             </div>
         </div>

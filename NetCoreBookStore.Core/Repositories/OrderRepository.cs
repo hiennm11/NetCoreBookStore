@@ -3,6 +3,7 @@ using NetCoreBookStore.Data.Entities;
 using NetCoreBookStore.Data.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NetCoreBookStore.Core.Repositories
@@ -18,7 +19,7 @@ namespace NetCoreBookStore.Core.Repositories
             this._shoppingCart = shoppingCart;
         }
 
-        public void PlaceOrder(OrderVM orderVM)
+        public void PlaceOrder(OrderVM orderVM, string userId)
         {
             var order = new Order
             {
@@ -26,6 +27,12 @@ namespace NetCoreBookStore.Core.Repositories
                 OrderTotal = _shoppingCart.GetShoppingCartTotal(),
                 Date = DateTime.Now,
                 State = Data.Enums.State.Init,
+                CustomerName = $"{orderVM.FirstName} {orderVM.LastName}",
+                CustomerAddress = orderVM.Address,
+                CustomerEmail = orderVM.Email,
+                CustomerPhoneNumber = orderVM.PhoneNumber,
+                CustomerId = userId,
+                User = _appDbContext.Users.FirstOrDefault(m => m.Id.ToString() == userId),
                 OrderDetails = new List<OrderDetail>()
             };
 
