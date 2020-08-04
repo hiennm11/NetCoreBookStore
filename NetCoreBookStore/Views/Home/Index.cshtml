@@ -7,7 +7,31 @@
 <partial name="_Carousel" />
 <partial name="_RecommendedBooks" model="@rec" />
 <partial name="_About" />
-<partial name="_RecentBooks" model="@Model" />
+@*<partial name="_RecentBooks" model="@Model" />*@
+
+<div class="container">
+
+    <div class="recent-book-sec">
+        <div class="title">
+            <h2>recent books</h2>
+            <hr>
+        </div>
+        <div class="row" id="RecentBooks">
+            <partial name="_BookItemsDiv" model="@ViewBag.Items as Dictionary<int, BookVM>" />
+        </div>
+
+        @if (!(bool)ViewBag.IsEndOfRecords)
+        {
+            <div class="btn-sec">
+                <a class="btn gray-btn" onclick="loadMore(window.location.href + 'home/index')">load More books</a>
+            </div>
+        }
+
+        
+    </div>
+</div>
+
+
 
 <section class="features-sec">
     <div class="container">

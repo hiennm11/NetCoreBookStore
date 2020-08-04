@@ -17,6 +17,8 @@ namespace NetCoreBookStore.Core.Repositories
         Task<IEnumerable<BookVM>> GetAllAsync();
         Task<IEnumerable<BookVM>> GetRecomendedBooksAsync();
         Task<IEnumerable<BookVM>> GetPagingAsync(int page, int pageSize);
+        Task<Dictionary<int, BookVM>> GetDictionaryPagingAsync(int page, int pageSize);
+
         Task<BookDetailsResponse> GetSingleAsync(string Id);
         Book GetBookEntityById(string Id);
         Task<Book> GetBookEntityByIdAsync(string Id);
@@ -69,6 +71,14 @@ namespace NetCoreBookStore.Core.Repositories
             return _dbContext.Books.Include(s => s.Images).FirstOrDefaultAsync(x => x.Id == Id);
         }
 
+        public async Task<Dictionary<int, BookVM>> GetDictionaryPagingAsync(int page, int pageSize)
+        {
+            int _itemIndex = (page - 1) * pageSize + 1;
+            var _items = await this.GetPagingAsync(page, pageSize);
+
+            return _items.ToDictionary(x => _itemIndex++, x => x);
+        }
+
         public async Task<IEnumerable<BookVM>> GetPagingAsync(int page, int pageSize)
         {
             return await _dbContext.Books.Select(x => new BookVM
@@ -77,7 +87,8 @@ namespace NetCoreBookStore.Core.Repositories
                 Description = x.Description,
                 Title = x.Title,
                 NameAlias = x.NameAlias,
-                Price = x.Price
+                Price = x.Price,
+                Image = _dbContext.BookImages.FirstOrDefault(s => s.BookId == x.Id && s.Sort == 1).ImgPath,
             }).Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
         }
 

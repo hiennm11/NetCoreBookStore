@@ -1,10 +1,7 @@
-
-
 $(document).ready(function() {
 // $('.navbar-toggler').click(function() {
 //     $('.navbar-collapse').slideToggle();
 //    });
-
 
  
   $("#owl-demo").owlCarousel({
@@ -28,12 +25,5 @@ $(document).ready(function() {
        loop: true,
 
   });
-
-
-
-
  
 });
-
-
-
