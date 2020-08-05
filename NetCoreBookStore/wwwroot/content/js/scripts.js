@@ -1,5 +1,5 @@
 ﻿
-var page = 0;
+var page = 1;
 var inCallback = false;
 
 function loadMore(url) {
@@ -13,15 +13,16 @@ function loadMore(url) {
             url: url,
             data: "page=" + page,
             success: function (data, textstatus) {
-                if (data !== '') {
+                if (data !== "") {
                     $("#RecentBooks").append(data);
+                    inCallback = false;
+                    $('#loading-animation').hide();
+                    $('#load-more').show();
                 }
                 else {
                     page = -1;
+                    $('#loading-animation').hide();
                 }
-                inCallback = false;
-                $('#loading-animation').hide();
-                $('#load-more').show();
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 $('#load-more').hide();

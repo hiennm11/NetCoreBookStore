@@ -1,6 +1,5 @@
-﻿@model Dictionary<int, BookVM>
-
-@foreach (var item in Model.Values)
+﻿@model IEnumerable<BookVM>
+@foreach (var item in Model)
 {
     <div class="col-md-3">
         <partial name="_BookItem" model="@item" />

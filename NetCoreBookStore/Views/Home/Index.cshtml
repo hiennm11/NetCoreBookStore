@@ -1,11 +1,10 @@
 ﻿@model IEnumerable<BookVM>
 @{
     ViewData["Title"] = "Bookstore - Index";
-    var rec = (List<BookVM>)ViewBag.Recommended;
 }
 
 <partial name="_Carousel" />
-<partial name="_RecommendedBooks" model="@rec" />
+<partial name="_RecommendedBooks" model="@ViewBag.Recommended as IEnumerable<BookVM>" />
 <partial name="_About" />
 @*<partial name="_RecentBooks" model="@Model" />*@
 
@@ -17,17 +16,19 @@
             <hr>
         </div>
         <div class="row" id="RecentBooks">
-            <partial name="_BookItemsDiv" model="@ViewBag.Items as Dictionary<int, BookVM>" />
+            <partial name="_BookItemsDiv" model="@Model" />
         </div>
 
         @if (!(bool)ViewBag.IsEndOfRecords)
         {
             <div class="btn-sec">
-                <a class="btn gray-btn" onclick="loadMore(window.location.href + 'home/index')">load More books</a>
+                <a class="btn gray-btn" id="load-more" onclick="loadMore(window.location.href + 'home/loadmore')">load More books</a>
             </div>
         }
+        <div class="spinner-border" id="loading-animation" role="status" hidden>
+            <span class="sr-only">Loading...</span>
+        </div>
 
-        
     </div>
 </div>
 

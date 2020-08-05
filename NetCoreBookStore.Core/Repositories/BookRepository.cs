@@ -22,7 +22,7 @@ namespace NetCoreBookStore.Core.Repositories
         Task<BookDetailsResponse> GetSingleAsync(string Id);
         Book GetBookEntityById(string Id);
         Task<Book> GetBookEntityByIdAsync(string Id);
-
+        int TotalRow();
 
     }
 
@@ -132,6 +132,11 @@ namespace NetCoreBookStore.Core.Repositories
             book.Images = imgList.ToList();
 
             return book;
+        }
+
+        public int TotalRow()
+        {
+            return _dbContext.Books.Count();            
         }
     }
 }
