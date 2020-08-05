@@ -12,5 +12,28 @@
 
 <section class="static about-sec">
     <partial name="_RecommendedBooks" model="@rec"/>
-    <partial name="_RecentBooks" model="@Model" />    
+    
+    <div class="container">
+
+        <div class="recent-book-sec">
+            <div class="title">
+                <h2>recent books</h2>
+                <hr>
+            </div>
+            <div class="row" id="RecentBooks">
+                <partial name="_BookItemsDiv" model="@Model" />
+            </div>
+
+            @if (!(bool)ViewBag.IsEndOfRecords)
+            {
+                <div class="btn-sec">
+                    <a class="btn gray-btn" id="load-more" onclick="loadMore('/product/loadmore')">load More books</a>
+                </div>
+            }
+            <div class="spinner-border" id="loading-animation" role="status" hidden>
+                <span class="sr-only">Loading...</span>
+            </div>
+
+        </div>
+    </div>
 </section>
