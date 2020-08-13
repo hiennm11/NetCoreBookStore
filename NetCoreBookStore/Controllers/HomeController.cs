@@ -3,6 +3,8 @@ using NetCoreBookStore.Service.Repositories;
 using NetCoreBookStore.Extensions;
 using System.Linq;
 using System.Threading.Tasks;
+using NetCoreBookStore.Models;
+using System.Diagnostics;
 
 namespace NetCoreBookStore.Controllers
 {
@@ -40,6 +42,12 @@ namespace NetCoreBookStore.Controllers
                 var response = await _bookRepository.GetPagingAsync(page.Value, _recordsPerLoad);
                 return View("Index", response);
             }
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
     }
