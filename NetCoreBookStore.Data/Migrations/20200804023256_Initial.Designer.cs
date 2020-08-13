@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NetCoreBookStore.Data.EF;
+using NetCoreBookStore.Core.EF;
 
-namespace NetCoreBookStore.Data.Migrations
+namespace NetCoreBookStore.Core.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20200804023256_Initial")]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.Entities
+namespace NetCoreBookStore.Core.Entities
 {
     public class BookImage
     {

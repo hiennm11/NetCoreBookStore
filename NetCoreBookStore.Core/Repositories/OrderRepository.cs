@@ -1,12 +1,12 @@
-﻿using NetCoreBookStore.Data.EF;
-using NetCoreBookStore.Data.Entities;
-using NetCoreBookStore.Data.ViewModel;
+﻿using NetCoreBookStore.Core.EF;
+using NetCoreBookStore.Core.Entities;
+using NetCoreBookStore.Core.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NetCoreBookStore.Core.Repositories
+namespace NetCoreBookStore.Service.Repositories
 {
     public class OrderRepository : IOrderRepository
     {
@@ -26,7 +26,7 @@ namespace NetCoreBookStore.Core.Repositories
                 Id = Guid.NewGuid().ToString(),
                 OrderTotal = _shoppingCart.GetShoppingCartTotal(),
                 Date = DateTime.Now,
-                State = Data.Enums.State.Init,
+                State = Core.Enums.State.Init,
                 CustomerName = $"{orderVM.FirstName} {orderVM.LastName}",
                 CustomerAddress = orderVM.Address,
                 CustomerEmail = orderVM.Email,

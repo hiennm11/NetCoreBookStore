@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using NetCoreBookStore.Data.Entities;
-using NetCoreBookStore.Data.Extensions;
+using NetCoreBookStore.Core.Entities;
+using NetCoreBookStore.Core.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace NetCoreBookStore.Data.EF
+namespace NetCoreBookStore.Core.EF
 {
     public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {

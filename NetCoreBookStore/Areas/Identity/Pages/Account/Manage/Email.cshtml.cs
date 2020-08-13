@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.Entities;
 
 namespace NetCoreBookStore.Areas.Identity.Pages.Account.Manage
 {

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.Extensions
+namespace NetCoreBookStore.Core.Extensions
 {
     public static class ModelBuilderExtension
     {

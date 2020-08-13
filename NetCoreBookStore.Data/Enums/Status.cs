@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.Enums
+namespace NetCoreBookStore.Core.Enums
 {
     public enum Status
     {

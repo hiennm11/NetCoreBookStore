@@ -1,4 +1,4 @@
-﻿namespace NetCoreBookStore.Data.Entities
+﻿namespace NetCoreBookStore.Core.Entities
 {
     public class ShoppingCartItem
     {

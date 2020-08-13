@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NetCoreBookStore.Data.EF;
-using NetCoreBookStore.Data.Entities;
-using NetCoreBookStore.Data.ResponseModel;
-using NetCoreBookStore.Data.ViewModel;
+using NetCoreBookStore.Core.EF;
+using NetCoreBookStore.Core.Entities;
+using NetCoreBookStore.Core.ResponseModel;
+using NetCoreBookStore.Core.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NetCoreBookStore.Core.Repositories
+namespace NetCoreBookStore.Service.Repositories
 {
     public interface IBookRepository
     {

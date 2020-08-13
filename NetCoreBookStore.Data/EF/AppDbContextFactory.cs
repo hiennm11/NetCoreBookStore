@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace NetCoreBookStore.Data.EF
+namespace NetCoreBookStore.Core.EF
 {
     class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     {

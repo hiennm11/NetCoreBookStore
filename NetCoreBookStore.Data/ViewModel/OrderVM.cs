@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace NetCoreBookStore.Data.ViewModel
+namespace NetCoreBookStore.Core.ViewModel
 {
     public class OrderVM
     {

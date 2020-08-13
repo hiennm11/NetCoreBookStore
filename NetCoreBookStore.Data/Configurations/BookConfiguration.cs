@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.Configurations
+namespace NetCoreBookStore.Core.Configurations
 {
     public class BookConfiguration : IEntityTypeConfiguration<Book>
     {

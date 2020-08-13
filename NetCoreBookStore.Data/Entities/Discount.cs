@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NetCoreBookStore.Data.Entities
+namespace NetCoreBookStore.Core.Entities
 {
     public class Discount
     {

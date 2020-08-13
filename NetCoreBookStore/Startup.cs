@@ -12,9 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using NetCoreBookStore.Core.Repositories;
-using NetCoreBookStore.Data.EF;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Service.Repositories;
+using NetCoreBookStore.Core.EF;
+using NetCoreBookStore.Core.Entities;
 
 namespace NetCoreBookStore
 {

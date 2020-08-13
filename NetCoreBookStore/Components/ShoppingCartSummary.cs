@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NetCoreBookStore.Core.Repositories;
+using NetCoreBookStore.Service.Repositories;
 using NetCoreBookStore.Models;
 
 namespace NetCoreBookStore.Components

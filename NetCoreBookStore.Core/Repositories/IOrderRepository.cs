@@ -1,7 +1,7 @@
-﻿using NetCoreBookStore.Data.Entities;
-using NetCoreBookStore.Data.ViewModel;
+﻿using NetCoreBookStore.Core.Entities;
+using NetCoreBookStore.Core.ViewModel;
 
-namespace NetCoreBookStore.Core.Repositories
+namespace NetCoreBookStore.Service.Repositories
 {
     public interface IOrderRepository
     {

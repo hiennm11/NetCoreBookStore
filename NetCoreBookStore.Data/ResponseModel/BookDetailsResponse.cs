@@ -1,9 +1,9 @@
-﻿using NetCoreBookStore.Data.ViewModel;
+﻿using NetCoreBookStore.Core.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.ResponseModel
+namespace NetCoreBookStore.Core.ResponseModel
 {
     public class BookDetailsResponse
     {

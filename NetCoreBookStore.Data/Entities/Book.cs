@@ -1,9 +1,9 @@
-﻿using NetCoreBookStore.Data.Enums;
+﻿using NetCoreBookStore.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreBookStore.Data.Entities
+namespace NetCoreBookStore.Core.Entities
 {
     public class Book
     {

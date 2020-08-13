@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NetCoreBookStore.Data.EF;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.EF;
+using NetCoreBookStore.Core.Entities;
 
 [assembly: HostingStartup(typeof(NetCoreBookStore.Areas.Identity.IdentityHostingStartup))]
 namespace NetCoreBookStore.Areas.Identity

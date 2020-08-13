@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore", "NetCoreBookStore\NetCoreBookStore.csproj", "{4D9F8489-28CF-4027-A55F-D11D0302E4BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore.Core", "NetCoreBookStore.Core\NetCoreBookStore.Core.csproj", "{D971B81F-417B-4D72-B102-2F1B894CF831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore.Service", "NetCoreBookStore.Core\NetCoreBookStore.Service.csproj", "{D971B81F-417B-4D72-B102-2F1B894CF831}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore.Data", "NetCoreBookStore.Data\NetCoreBookStore.Data.csproj", "{F803817A-7DEA-477E-8CBF-5A74042AB53C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreBookStore.Core", "NetCoreBookStore.Data\NetCoreBookStore.Core.csproj", "{F803817A-7DEA-477E-8CBF-5A74042AB53C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.Entities;
 
 namespace NetCoreBookStore.Areas.Identity.Pages.Account.Manage
 {

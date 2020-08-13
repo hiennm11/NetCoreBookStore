@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using NetCoreBookStore.Data.EF;
-using NetCoreBookStore.Data.Entities;
+using NetCoreBookStore.Core.EF;
+using NetCoreBookStore.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NetCoreBookStore.Core.Repositories
+namespace NetCoreBookStore.Service.Repositories
 {
     public class ShoppingCartRepository : IShoppingCartRepository
     {
