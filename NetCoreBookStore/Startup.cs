@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Core.EF;
 using NetCoreBookStore.Core.Entities;
+using NetCoreBookStore.Extensions;
+using NetCoreBookStore.Services;
 
 namespace NetCoreBookStore
 {
@@ -40,16 +42,21 @@ namespace NetCoreBookStore
                 options.Password.RequireDigit = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireNonAlphanumeric = false;
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = true;
+                options.SignIn.RequireConfirmedAccount = true;
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
             //services.AddIdentityCore<IdentityUser<Guid>, IdentityRole<Guid>>().AddEntityFrameworkStores<AppDbContext>();
 
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
-
             services.AddScoped<ShoppingCartRepository>(sp => ShoppingCartRepository.GetCart(sp));
-            
+
+            services.AddTransient<IEmailService, EmailService>();
+
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddControllersWithViews();
