@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NetCoreBookStore.Service.Repositories
+namespace NetCoreBookStore.Core.Repositories
 {
     public interface IBookRepository
     {

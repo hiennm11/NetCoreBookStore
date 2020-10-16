@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using NetCoreBookStore.Service.Repositories;
+using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Core.Entities;
 using NetCoreBookStore.Core.ViewModel;
 

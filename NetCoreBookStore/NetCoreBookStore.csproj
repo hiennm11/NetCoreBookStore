@@ -20,8 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreBookStore.Core\NetCoreBookStore.Service.csproj" />
-    <ProjectReference Include="..\NetCoreBookStore.Data\NetCoreBookStore.Core.csproj" />
+    <ProjectReference Include="..\NetCoreBookStore.Core\NetCoreBookStore.Core.csproj" />
   </ItemGroup>
 
 </Project>

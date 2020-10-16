@@ -1,4 +1,4 @@
-﻿using NetCoreBookStore.Service.Repositories;
+﻿using NetCoreBookStore.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

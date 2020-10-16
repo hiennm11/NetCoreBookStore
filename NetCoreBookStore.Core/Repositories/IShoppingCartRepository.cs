@@ -1,7 +1,7 @@
 ﻿using NetCoreBookStore.Core.Entities;
 using System.Collections.Generic;
 
-namespace NetCoreBookStore.Service.Repositories
+namespace NetCoreBookStore.Core.Repositories
 {
     public interface IShoppingCartRepository
     {

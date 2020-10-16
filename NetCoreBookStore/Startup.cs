@@ -12,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using NetCoreBookStore.Service.Repositories;
+using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Core.EF;
 using NetCoreBookStore.Core.Entities;
 

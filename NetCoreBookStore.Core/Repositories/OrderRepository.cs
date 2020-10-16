@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NetCoreBookStore.Service.Repositories
+namespace NetCoreBookStore.Core.Repositories
 {
     public class OrderRepository : IOrderRepository
     {

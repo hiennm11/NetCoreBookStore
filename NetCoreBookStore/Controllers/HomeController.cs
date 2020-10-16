@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NetCoreBookStore.Service.Repositories;
+using NetCoreBookStore.Core.Repositories;
 using NetCoreBookStore.Extensions;
 using System.Linq;
 using System.Threading.Tasks;
