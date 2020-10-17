@@ -46,8 +46,14 @@ namespace NetCoreBookStore
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = true;
                 options.SignIn.RequireConfirmedAccount = true;
-            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+                options.Tokens.EmailConfirmationTokenProvider = "emailconfirmation";
+            })
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders()
+                .AddTokenProvider<EmailConfirmationTokenProvider<AppUser>>("emailconfirmation");
+
             //services.AddIdentityCore<IdentityUser<Guid>, IdentityRole<Guid>>().AddEntityFrameworkStores<AppDbContext>();
+            services.Configure<DataProtectionTokenProviderOptions>(options => options.TokenLifespan = TimeSpan.FromHours(4));
 
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
 
