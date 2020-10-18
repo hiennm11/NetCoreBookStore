@@ -56,4 +56,10 @@ PM> update-database
 | Register an Account | &#10004; | Ability of Register an Account |
 | Account Login | &#10004; | Ability of Sign in Account |
 
+<b>Email Features</b>
+
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Send register comfirmation email | &#10004; | Ability of send comfirmation email after register an Account |
+
 ## Updating...
